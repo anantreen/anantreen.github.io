@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CS6.302 Software System Development — IIIT Hyderabad, Monsoon 2026">
+  <title>CS6.302 - Software System Development | IIIT Hyderabad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startTime()">
+  <div class="page-shell">
+    <header class="hero" id="home">
+      <h1>CS6.302 - Software System Development</h1>
+      <h2>Software Engineering Research Center, IIIT Hyderabad</h2>
+      <div class="term">Monsoon 2026</div>
+    </header>
+
+    <nav class="nav" aria-label="Course sections">
+      <a href="#about">About</a>
+      <a href="#lecture">Lecture / Lab / Office Hours</a>
+      <a href="#cpolicy">Course Policy</a>
+      <a href="#schedule">Lectures</a>
+      <a href="#lab">Lab</a>
+      <a href="#activity">Exams</a>
+      <a href="#staff">Staff</a>
+    </nav>
+
+    <main>
+      <section class="section" id="about">
+        <h2>About <a class="back-top" href="#home">↑ top</a></h2>
+        <p>
+          Software System Development is a graduate-level course that equips students with a comprehensive understanding
+          of the principles, tools, and practices involved in designing and building modern software systems. Emphasizing
+          a systems-oriented perspective, the course explores foundational and contemporary topics including Operating
+          Systems, Computer Networks, Software Engineering methodologies, and Database Systems (both relational and NoSQL).
+        </p>
+        <p>
+          Students will gain practical experience with industry-relevant tools and technologies such as Bash scripting,
+          SQL, NoSQL databases, HTML, CSS, JavaScript, front-end frameworks, RESTful APIs, Python, and Flask. The course
+          focuses on building scalable, maintainable, and secure software systems while fostering an appreciation for
+          system integration, version control, development workflows, and deployment strategies.
+        </p>
+        <p>
+          Designed for students with a fundamental background in programming, this course bridges theory and practice,
+          preparing them to contribute effectively to complex software development projects in both research and industry settings.
+        </p>
+      </section>
+
+      <section class="section" id="lecture">
+        <h2>Lecture / Lab / Office Hours <a class="back-top" href="#home">↑ top</a></h2>
+        <p>
+          The lectures will be in-person and will be conducted by the Instructor. The lab sessions will be in-person and
+          will be conducted by the Teaching Assistants. The lecture material (slides, lecture notes, supplementary material)
+          can be accessed from this website.
+        </p>
+        <ul class="info-list">
+          <li><strong>Lecture 🏛:</strong> 8:30 AM to 9:55 AM — Tuesdays and Fridays — Lecture Hall: H-204</li>
+          <li><strong>Lab / Tutorial 💻:</strong> 02:00 PM to 5:00 PM Friday — Lecture Hall: SH1</li>
+        </ul>
+        <p>
+          <strong>Office Hours:</strong> There are no specific instructor office hours. The instructor is available to meet
+          all students for 15 minutes before and after every class to address queries or concerns. You can also write to
+          <a href="mailto:saianirudh.karre@iiit.ac.in">saianirudh.karre@iiit.ac.in</a>. TA office hours can be found in the
+          <a href="#staff">Staff</a> section.
+        </p>
+      </section>
+
+      <section class="section" id="cpolicy">
+        <h2>Course Policy <a class="back-top" href="#home">↑ top</a></h2>
+        <ul class="policy-list">
+          <li><strong>Teaching and Learning Methodology:</strong>
+            This course is designed to help learners understand the principles behind good software system development.
+            Learners will work on real-life problems to promote deeper engagement and understanding while resembling true career situations.
+          </li>
+          <li><strong>Academic Honesty:</strong>
+            If A helps B in a Task X, B does not get the opportunity to do Task X, does not learn the associated skill,
+            and becomes dependent and unfit for jobs requiring that skill. Helping should help someone learn.
+          </li>
+          <li><strong>Zero Tolerance on Plagiarism:</strong>
+            This course requires students to submit assignments, participate in in-class activities, give mid and final exams,
+            and work with groups on projects. Any form of cheating or plagiarism will result in a score of “0” for projects,
+            assignments, or exams. Egregious cases will result in a grade of “F” for the course.
+          </li>
+          <li><strong>Absentee Policy:</strong>
+            Students are expected to attend and participate in all lectures and lab sessions (graded or ungraded). If a
+            quiz/activity is held during a lecture session that a student misses, the student will receive a “0” for it.
+            There will be no makeup classes, quizzes, or activities.
+          </li>
+          <li><strong>Miscellaneous Instructions:</strong>
+            Given that the subject is based on building software systems, ensure you have a laptop with a decent configuration.
+            Participate in discussions, interact with the instructor during class and the TAs during labs, and attend class with your personal machine.
+          </li>
+          <li><strong>Use of AI Tools:</strong>
+            Students are free to use AI tools such as ChatGPT and Copilot for course assignments/activities. Mention what
+            tools were used and how they were used in the submission report. AI tools can mislead or provide wrong solutions,
+            so the concepts must be understood before using them. Use tools wisely.
+          </li>
+          <li><strong>Submission Deadlines:</strong>
+            Considering the course has more than 100 enrolled students, there will be no extensions for graded tasks.
+            It is the student's responsibility to submit assignments or lab activities by the prescribed deadline. Please do not wait until the last minute.
+          </li>
+          <li><strong>Grading Policy:</strong>
+            Once a grade for a deliverable is released, students may request a re-evaluation with appropriate reasons up to
+            one week after the grade is posted. After that, prior grades may not be discussed with the instructor. There will
+            be no makeup activity/lab unless prior permission is granted from the Academic Office.
+            Late submissions will not be entertained unless there is a genuine health reason supported by appropriate documentation.
+          </li>
+          <li><strong>Grading Distribution:</strong>
+            The course instructor reserves the right to make minor modifications to the distribution based on course progress.
+            The overall distribution is:
+
+            <div class="table-wrap" style="margin-top: 14px;">
+              <table class="weightage">
+                <thead>
+                  <tr><th>Deliverables</th><th>Weightage</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Assignment (2)</td><td>20%</td></tr>
+                  <tr><td>Lab &amp; Class Activities (5)</td><td>15%</td></tr>
+                  <tr><td>QUIZ (2)</td><td>20%</td></tr>
+                  <tr><td>MID (2) — Team Hackathon</td><td>20%</td></tr>
+                  <tr><td>Final Exam — Hackathon</td><td>25%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="schedule">
+        <h2>Lecture Schedule &amp; Content <a class="back-top" href="#home">↑ top</a></h2>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Lecture No</th><th>Date</th><th>Day</th><th>Lecture Name</th><th>Material</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>31-Jul-26</td><td>Friday</td><td>Course Intro - Software System</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/SSD_Class1.pdf" target="_blank" rel="noopener">Slides</a></td></tr>
+              <tr><td>2</td><td>4-Aug-26</td><td>Tuesday</td><td>Structred Databases</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/StructuredData.pdf" target="_blank" rel="noopener">Slides</a><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/databases.sql" target="_blank" rel="noopener">Scripts</a><a href="https://tinted-rumba-8c6.notion.site/Structured-Databases-2456a6248bf6805f83e1cbf0a58761ec" target="_blank" rel="noopener">Notes</a></td></tr>
+              <tr><td>3</td><td>7-Aug-26</td><td>Friday</td><td>Scaling Databases</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/ScalingDatabases.pdf" target="_blank" rel="noopener">Slides</a><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/databases_2.sql" target="_blank" rel="noopener">Scripts</a><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/databases_3.sql" target="_blank" rel="noopener">More Scripts</a></td></tr>
+              <tr><td>4</td><td>11-Aug-26</td><td>Tuesday</td><td>Unstructured Databases</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/UnStructuredDatabases.pdf" target="_blank" rel="noopener">Slides</a><a href="https://tinted-rumba-8c6.notion.site/Unstructured-Databases-24b6a6248bf680679b36e76c33d301c4" target="_blank" rel="noopener">Notes</a><a href="https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/refs/heads/main/CourseContent/CS6302_M26/mongo.txt" target="_blank" rel="noopener">Scripts</a></td></tr>
+              <tr><td>5</td><td>14-Aug-26</td><td>Friday</td><td>Data Architectures</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/DatabaseArchitectures.pdf" target="_blank" rel="noopener">Slides</a></td></tr>
+              <tr><td>6</td><td>18-Aug-26</td><td>Tuesday</td><td>Understanding WWW</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/www.pdf" target="_blank" rel="noopener">Slides</a><a href="https://tinted-rumba-8c6.notion.site/Web-Technology-2566a6248bf6800488d0c13a992502e4" target="_blank" rel="noopener">Notes</a><a href="https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/refs/heads/main/CourseContent/CS6302_M26/samplehtml.html" target="_blank" rel="noopener">Sample Script</a></td></tr>
+              <tr><td>7</td><td>21-Aug-26</td><td>Friday</td><td>Navigating WWW</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/WebLanguages.pdf" target="_blank" rel="noopener">Slides</a><a href="https://github.com/serc-iiith/serc-iiith.github.io/blob/main/CourseContent/CS6302_M26/html.md" target="_blank" rel="noopener">Notes</a><a href="https://github.com/serc-iiith/serc-iiith.github.io/blob/main/CourseContent/CS6302_M26/css.md" target="_blank" rel="noopener">More Notes</a></td></tr>
+              <tr><td>8</td><td>28-Aug-26</td><td>Friday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>9</td><td>1-Sep-26</td><td>Tuesday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>10</td><td>3-Sep-26</td><td>Thursday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>11</td><td>8-Sep-26</td><td>Tuesday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>12</td><td>11-Sep-26</td><td>Friday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>13</td><td>15-Sep-26</td><td>Tuesday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>14</td><td>18-Sep-26</td><td>Friday</td><td>Web</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>15</td><td>25-Sep-26</td><td>Friday</td><td>System Design</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>16</td><td>29-Sep-26</td><td>Tuesday</td><td>System Design</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>17</td><td>1-Oct-26</td><td>Thursday</td><td>SHELL</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>18</td><td>6-Oct-26</td><td>Tuesday</td><td>SHELL</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>19</td><td>9-Oct-26</td><td>Friday</td><td>Python - 1</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>20</td><td>13-Oct-26</td><td>Tuesday</td><td>Python - 2</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>21</td><td>16-Oct-26</td><td>Friday</td><td>Python - 3</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>22</td><td>23-Oct-26</td><td>Friday</td><td>Python - 4</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>23</td><td>27-Oct-26</td><td>Tuesday</td><td>Python - 5</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>24</td><td>30-Oct-26</td><td>Friday</td><td>Python - 6</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>25</td><td>3-Nov-26</td><td>Tuesday</td><td>Python - 7</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>26</td><td>10-Nov-26</td><td>Tuesday</td><td>Python - 8</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>27</td><td>13-Nov-26</td><td>Friday</td><td>Python - 9</td><td class="badge-tba">Slides · Notes</td></tr>
+              <tr><td>28</td><td>17-Nov-26</td><td>Tuesday</td><td>Python - 10</td><td class="badge-tba">Slides · Notes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="lab">
+        <h2>Lab Schedule &amp; Content <a class="back-top" href="#home">↑ top</a></h2>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead><tr><th>Lab No</th><th>Date</th><th>Day</th><th>Lab Session</th><th>Material</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>14-Aug-2026</td><td>Friday</td><td>git - version control</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/Labs/lab01/GitLab.pdf" target="_blank" rel="noopener">Slides</a><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/Labs/lab01/GitLabActivity.pdf" target="_blank" rel="noopener">Activity</a></td></tr>
+              <tr><td>2</td><td>21-Aug-2026</td><td>Friday</td><td>SQL - Stored procedures and Cursors</td><td class="material"><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/Labs/lab02/SP.pdf" target="_blank" rel="noopener">Slides</a><a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/serc-iiith/serc-iiith.github.io/main/CourseContent/CS6302_M26/Labs/lab02/lab_activity_2.pdf" target="_blank" rel="noopener">Activity</a></td></tr>
+              <tr><td>3</td><td>TBA</td><td>TBA</td><td>TBA</td><td class="badge-tba">Slides · Activity</td></tr>
+              <tr><td>4</td><td>TBA</td><td>TBA</td><td>TBA</td><td class="badge-tba">Slides · Activity</td></tr>
+              <tr><td>5</td><td>TBA</td><td>TBA</td><td>TBA</td><td class="badge-tba">Slides · Activity</td></tr>
+              <tr><td>6</td><td>TBA</td><td>TBA</td><td>TBA</td><td class="badge-tba">Slides · Activity</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="activity">
+        <h2>Exams &amp; Activities <a class="back-top" href="#home">↑ top</a></h2>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead><tr><th>S.No</th><th>Exam Type</th><th>Announcement</th><th>Submission Due</th><th>Material</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Assignment 1</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>2</td><td>Assignment 2</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>3</td><td>QUIZ 1</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>4</td><td>MID 1 Hackathon</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>5</td><td>QUIZ 2</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>6</td><td>MID 2 Hackathon</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>7</td><td>Activity 1</td><td>SQL Practice</td><td>7 July 2026</td><td><a href="https://courses.iiit.ac.in/mod/assign/view.php?id=69645" target="_blank" rel="noopener">Moodle</a></td></tr>
+              <tr><td>8</td><td>Activity 2</td><td>NoSQL Practice</td><td>18 July 2026</td><td><a href="https://courses.iiit.ac.in/mod/assign/view.php?id=70178" target="_blank" rel="noopener">Moodle</a></td></tr>
+              <tr><td>9</td><td>Activity 3</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+              <tr><td>10</td><td>Final Exam</td><td>TBA</td><td>TBA</td><td class="badge-tba">TBA</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="staff">
+        <h2>Staff <a class="back-top" href="#home">↑ top</a></h2>
+        <div class="staff-grid">
+          <div class="staff-card">
+            <strong>Instructors</strong>
+            <a href="https://sites.google.com/view/abhishek-singh/home" target="_blank" rel="noopener">Dr. Abhishek Singh</a><br>
+            <a href="https://sai11101989.github.io" target="_blank" rel="noopener">Dr. Sai Anirudh Karre</a>
+          </div>
+          <div class="staff-card">
+            <strong>Teaching Assistants</strong>
+            <a href="https://www.linkedin.com/in/gursahib-singh-18392736a/" target="_blank" rel="noopener">Gursahib Singh</a><br>
+            <a href="https://www.linkedin.com/in/kandagatla-akshith-4b9a5131b/" target="_blank" rel="noopener">Kandagatla Akshith</a><br>
+            <a href="https://www.linkedin.com/in/arushi-tandon-5139982a0/" target="_blank" rel="noopener">Arushi Tandon</a><br>
+            <a href="https://www.linkedin.com/in/rahulsaha99/" target="_blank" rel="noopener">Rahul Saha</a><br>
+            <a href="https://www.linkedin.com/in/hardik-chadha-876338266/" target="_blank" rel="noopener">Hardik Chadha</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://intranet.iiit.ac.in/offices/static/files/Monsoon_2026_Almanac_Final.pdf" target="_blank" rel="noopener">Monsoon 2026 Almanac</a>
+        <a href="https://intranet.iiit.ac.in/offices/static/files/Lecture_Timetable_M26-V3.pdf" target="_blank" rel="noopener">Monsoon 2026 Lecture Timetable</a>
+        <a href="https://intranet.iiit.ac.in/offices/static/files/Non-UG1_Lab%26Tutorial_timetable_M26-V3.pdf" target="_blank" rel="noopener">Monsoon 2026 Lab Timetable</a>
+        <a href="https://courses.iiit.ac.in/course/view.php?id=5840" target="_blank" rel="noopener">Courses Portal</a>
+      </div>
+      <div><a href="#home">↑ go to top</a></div>
+      <div id="txt" aria-live="polite"></div>
+      <p>
+        Course site hosted by github.io using BORING (🥵) course template.<br>
+        Course Policy credits to
+        <a href="https://faculty.iiit.ac.in/~raghu.reddy/Home.html" target="_blank" rel="noopener">Dr. Raghu Reddy</a> &amp;
+        <a href="https://karthikvaidhyanathan.com/" target="_blank" rel="noopener">Dr. Karthik Vaidhyanathan</a>.<br>
+        <a href="https://serc.iiit.ac.in" target="_blank" rel="noopener">Software Engineering Research Center</a>,
+        <a href="https://iiit.ac.in" target="_blank" rel="noopener">IIIT Hyderabad</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function startTime() {
+      const now = new Date();
+      document.getElementById('txt').textContent = now.toString();
+      setTimeout(startTime, 1000);
+    }
+  </script>
+</body>
+</html>
